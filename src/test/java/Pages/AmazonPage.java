@@ -19,6 +19,6 @@ public class AmazonPage {
     @FindBy (id = "sp-cc-accept")
     public WebElement amazonCerez;
 
-    @FindBy (xpath = "(//img[@class='s-image'])[1]")
+    @FindBy (xpath = "(//img[@class='s-image'])[2]")
     public WebElement amazonSonucIlkResim;
 }

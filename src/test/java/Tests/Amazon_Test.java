@@ -28,7 +28,14 @@ public class Amazon_Test {
         String expectedResult="iphone 13 512";
         Assert.assertTrue(actualResult.contains(expectedResult));
         amazonPage.amazonSonucIlkResim.click();
-        Driver.closeDriver();
+        System.out.println(Driver.getDriver().findElement(By.xpath("(//span[@class='a-price-whole'])[1]")).getText());
+        //Driver.getDriver().findElement(By.xpath("(//input[@name='2'])[2]")).click();
+        System.out.println(Driver.getDriver().findElement(By.xpath("(//div[@class='a-section a-spacing-none a-padding-none inline-twister-dim-title-value-truncate-expanded'])[1]")).getText());
+        //Driver.getDriver().findElement(By.xpath("//input[@name='5']")).click();
+        System.out.println(Driver.getDriver().findElement(By.xpath("(//div[@class='a-section a-spacing-none a-padding-none inline-twister-dim-title-value-truncate-expanded'])[2]")).getText());
+        System.out.println(Driver.getDriver().findElement(By.id("availability")).getText());
+
+
 
 
     }
